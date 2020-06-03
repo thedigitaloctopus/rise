@@ -1,263 +1,410 @@
 <template>
   <Layout>
     <main>
-      <h1>Here</h1>
+      <h1>Rise: Who we are</h1>
+
+      <p>Rise is one of <a target="_blank" rel="noopener" href="https://getflywheel.com/about/">Flywheel</a>’s Employee Resource Groups. The mission of​ Rise​ is to provide a safe, open environment to promote, educate, and advocate for people of underrepresented racial groups and allies at Flywheel. ​Rise strives to inspire active participation from all members and unite them with education opportunities within the community, assist others, and bring diversity awareness within Flywheel.
+      </p>
+
+      <h2>Organizations and resources to support Omaha’s Black community</h2>
+
+      <p>
+        <em>Become a better advocate for, and promote people of underrepresented racial groups in our community</em>
+      </p>
+      <p>Image here
+      </p>
+      <h2>Omaha organizations we suggest donating to that empower Black communities</h2>
+
+
+      <ul>
+
+      <li>
+        <a target="_blank" rel="noopener" href="http://100blackmenomaha.org/">100 Black Men of Omaha</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="http://www.seventyfivenorth.org/">75 North Revitalization Corp</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.abideomaha.org/">Abide</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.aclunebraska.org/">ACLU Nebraska</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://empoweromaha.com/">African American Empowerment Network </a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="http://africancultureconnection.org/">African Culture Connection</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="http://www.bensonrefugeetf.com/">Benson Area Refugee Task Force</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.facebook.com/BlackAgendaAlliance/">Black Agenda Alliance</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.blackandpink.org/">Black and Pink</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://blackmenunited.weebly.com/">Black Men United</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.blackvotersmatterfund.org/">Black Votes Matter</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.prestonlovejr.com/">Black Votes Matter Preston Love, Jr</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://charlesdrew.com/">Charles Drew</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.culxr.house/">Culxr House</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="http://descendantsofdewitty.org/">Descendants of DeWitty,NE</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.emergingladiesacademy.org/?
+      </a>fbclid=IwAR1wTgfM1Nj7jGSb6KQ4UlQZ3yiD_sclqG080Pd7CNgCnExNwC4LfTTUhb0">Emerging Ladies Academy</a>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://girlsincomaha.org/">Girls Inc</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.ibbgomaha.com/">I Be Black Girl</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://ouradvancement.org/">League for African Advancement</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.legalaidofnebraska.org/">Legal Aid of Nebraska</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.malcolmxfoundation.org/">Malcolm X Foundation</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="http://mdbmsc.org/">Mildred D Brown Memorial Study Center</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.nc100bwomaha.org/">National Coalition of 100 Black Women
+      </a>Omaha</a>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.indiewire.com/2020/05/
+      </a>how-to-help-protesters-where-to-donate-1202234568/">National Resources</a>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.neleftcoalition.com/">Nebraska Left Coalition</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.noiseomaha.com/">NOISE</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://northstar360.org/">Northstar Foundation</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="http://www.omahatalons.org/">Omaha Talons</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.thesimplefoundation.org/#homeheader">The Simple Foundation</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.u-ca.org/">Union for Contemporary Arts</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.urbanleagueneb.org/">Urban League of Nebraska</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.yggomaha.com/">You Go Girl</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.ybiomaha.com/">Young Black and Influential</a>
+      </li>
+      </li>
+      </ul>
+      <h2>Resources</h2>
+
+
+      <h3>How to be an ally </h3>
+
+
+      <ul>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.instagram.com/p/CA04VKDAyjb/?igshid=1q8qijftgjjzn">10 steps to
+      </a>non-optical allyship</a>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=_dg86g-QlM0">5 tips for being an ally -
+      </a>YouTube video</a>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://docs.google.com/document/u/1/d/
+      </a>1BRlF2_zhNe86SGgHa6-VlBO-QgirITwCTugSfKie5Fs/mobilebasic?fbclid=IwAR08iAC23ZlGA-mad0by0PZljZ7ml5V_r0IW8MOA9TH9kcYee89ik9An8Dk&usp=gmail_thread">Anti-racism resources</a>
+
+      <li>
+        <a target="_blank" rel="noopener" href="http://www.maximummiddleage.com/right-now/
+      </a>alton-sterling-philando-castile-how-to-be-an-ally-to-black-people?fbclid=IwAR1oq8qrqB1_k0oMp2ngh_RoN8KAYIOCGPL3nrNQmu5n_Srq_49v4bHKwk8">Concrete ways to be an actual ally to Black people</a>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://open.spotify.com/playlist/37i9dQZF1DX1un4eyuioNE?
+      </a>si=n3fkcXl2Teqtq0P4HGLDNg">Spotify’s “Real People, Real Stories” playlist</a>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://guidetoallyship.com/">The Guide to Allyship</a>
+      </li>
+      </li>
+      </ul>
+      <h3>Healing-focused resources for POC </h3>
+
+
+      <ul>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.bonappetit.com/story/virtual-mental-health-resources">7
+      </a>virtual mental health resources for Black people right now</a>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://twitter.com/mayarichardsun/status/1265676677549559809">Mental
+      </a>health resources for POC</a>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://drive.google.com/file/d/17WKK9TrN5pRwUxNI1rT0-ZNGHa8kl0zn/view?
+      </a>fbclid=IwAR0_o8D80l6CdKfdxnoz1EWXBjPbXDoN_j7HZDlqDJjoDEjwv5n8swUf7YQ">Radical self & community care resources</a>
+      </li>
+      </ul>
+      <h3>Books to read</h3>
+
+
+      <ul>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/Americas-Original-Sin-Privilege-America/dp/
+      </a>1587434008/ref=sr_1_1?dchild=1&keywords=America%E2%80%99s+Original+Sin&qid=1591123988&sr=8-1">America’s Original Sin</a><br>- Jim Wallis
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/African-American-Latinx-History-ReVisioning/dp/
+      </a>0807005932/ref=sr_1_1?crid=2VSUMGWV9AZN6&dchild=1&keywords=an+african+american+and+latinx+history&qid=1591124226&sprefix=an+african+american%2Caps%2C157&sr=8-1">An African American and Latinx History of the United States</a><br>- Paul Ortiz
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/Indigenous-Peoples-History-ReVisioning-American/dp/
+      </a>0807057835/ref=sr_1_1?crid=B6K6GB80WCWD&dchild=1&keywords=an+indigenous+peoples+history+of+the+united+states&qid=1591124168&sprefix=an+ind%2Caps%2C171&sr=8-1">An Indigenous Peoples’ History of the United States</a><br>- Roxanne Dunbar-Ortiz
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/Between-World-Me-Ta-Nehisi-Coates/dp/0812993543/
+      </a>ref=sr_1_1?dchild=1&keywords=Between+The+World+and+Me&qid=1591124245&s=books&sr=1-1">Between The World and Me </a>- Ta-Nehisi Coates
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/Citizen-American-Lyric-Claudia-Rankine/dp/
+      </a>1555976905/ref=sr_1_2?dchild=1&keywords=citizen&qid=1591124188&sr=8-2">Citizen: An American Lyric</a><br>- Claudia Rankine
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/Good-Talk-Mira-Jacob-audiobook/dp/B07NQSN5XR/
+      </a>ref=sr_1_1?dchild=1&keywords=Good+Talk+-+Mira+Jacob&qid=1591124075&s=audible&sr=1-1">Good Talk: A Memoir in Conversations</a><br>- Mira Jacob
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/Black-Lives-Mattered-Lights-Media/dp/0872867382/
+      </a>ref=sr_1_1?dchild=1&keywords=Have+Black+Lives+Ever+Mattered&qid=1591124306&s=books&sr=1-1">Have Black Lives Ever Mattered</a><br>- Mumia Abu-Jamal
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/How-Does-Feel-Be-Problem/dp/0143115413/ref=sr_1_1?
+      </a>crid=11TZ1ODGYJA2B&dchild=1&keywords=how+does+it+feel+to+be+a+problem&qid=1591124369&sprefix=how+does+it+feel%2Caps%2C178&sr=8-1">How Does it Feel to be a Problem?: Being Young and Arab in America</a><br>- Moustafa Bayoumi
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/How-Be-Antiracist-Ibram-Kendi/dp/0525509283/
+      </a>ref=sr_1_1?dchild=1&keywords=How+to+be+an+Antiracist&qid=1591124223&s=books&sr=1-1">How to be an Antiracist </a>- Ibram X. Kendi
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/Im-Still-Here-Dignity-Whiteness/dp/1524760854/
+      </a>ref=sr_1_1?dchild=1&keywords=im+still+here&qid=1591124309&sr=8-1">I’m Still Here: Black Dignity in a World Made for Whiteness</a><br>- Austin Channing Brown
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/Just-Mercy-Story-Justice-Redemption/dp/081298496X/
+      </a>ref=sr_1_1?crid=L2ADF9Z56D7G&dchild=1&keywords=just+mercy&qid=1591124070&sprefix=just+mercy%2Caps%2C174&sr=8-1">Just Mercy</a><br>- Bryan Stevenson
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/Me-White-Supremacy-Combat-Ancestor/dp/1728209803/
+      </a>ref=sr_1_1?dchild=1&keywords=Me+and+White+Supremacy&qid=1591124158&s=books&sr=1-1">Me and White Supremacy: Combat Racism, Change the World, and Become a Good Ancestor</a><br>- Layla Saad
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/Mindful-Race-Transforming-Racism-Inside/dp/
+      </a>1683640810/ref=sr_1_1?dchild=1&keywords=mindful+of+race&qid=1591124127&sr=8-1">Mindful of Race: Transforming Racism from the Inside Out</a><br>- Ruth King
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/Minor-Feelings-Asian-American-Reckoning/dp/
+      </a>1984820362/ref=sr_1_1?dchild=1&keywords=minor+feelings&qid=1591124131&s=books&sr=1-1">Minor Feelings</a><br>- Cathy Park Hong
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/You-Want-Talk-About-Race/dp/1580058825/ref=sr_1_1?
+      </a>crid=226N0GQVGJVU6&dchild=1&keywords=so+you+want+to+talk+about+race&qid=1591123925&sprefix=so+you+want+%2Caps%2C173&sr=8-1">So, you want to talk about race</a><br>- Ijeoma Oluo
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/Stamped-Beginning-Definitive-History-National/dp/
+      </a>1568585985/ref=sr_1_1?dchild=1&keywords=Stamped+from+the+Beginning&qid=1591124266&s=books&sr=1-1">Stamped from the Beginning: The Definitive History of Racist Ideas in America</a><br>- Ibram X. Kendi
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/Tears-We-Cannot-Stop-America/dp/1250135990/
+      </a>ref=sr_1_1?dchild=1&keywords=tears+we+cannot+stop&qid=1591124015&sr=8-1">Tears We Cannot Stop: A Sermon to White America</a><br>- Michael Eric Dyson
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/Color-Law-Forgotten-Government-Segregated/dp/
+      </a>1631494538/ref=sr_1_1?dchild=1&keywords=The+Color+of+Law&qid=1591124328&s=books&sr=1-1">The Color of Law: A Forgotten History of How Our Government Segregated America</a><br>- Richard Rothstein
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/Fire-Next-Time-James-Baldwin/dp/067974472X/
+      </a>ref=sr_1_1?dchild=1&keywords=The+Fire+Next+Time&qid=1591123958&sr=8-1">The Fire Next Time </a>- James Baldwin
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/Fire-This-Time-Generation-Speaks/dp/1501126350/
+      </a>ref=sr_1_1?dchild=1&keywords=The+Fire+This+Time&qid=1591124392&s=books&sr=1-1">The Fire This Time: A New Generation Speaks about Race</a>- Jesmyn Ward
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/The-New-Jim-Crow-audiobook/dp/B007R0L47O/ref=sr_1_1?
+      </a>crid=1ZZ8Q4GSQSRJV&dchild=1&keywords=the+new+jim+crow+by+michelle+alexander&qid=1591124049&sprefix=the+new+jim+%2Caps%2C178&sr=8-1">The New Jim Crow</a><br>- Michelle Alexander
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/Warmth-Other-Suns-Americas-Migration/dp/0679763880/
+      </a>ref=sr_1_1?dchild=1&keywords=The+Warmth+of+Other+Suns&qid=1591124364&s=books&sr=1-1">The Warmth of Other Suns: The Epic Story of America's Great Migration </a><br>- Isabel Wilkerson
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/When-They-Call-You-Terrorist/dp/1250306906/
+      </a>ref=sr_1_1?crid=1261J9T9KGJ7D&dchild=1&keywords=when+they+call+you+a+terrorist&qid=1591124252&sprefix=when+they+call+%2Caps%2C169&sr=8-1">When They Call You a Terrorist: A Black Lives Matter Memoir</a><br>- Patrisse Khan-Cullors
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/White-Fragility-People-About-Racism/dp/0807047414/
+      </a>ref=sr_1_1?crid=1EM075IL9L99L&dchild=1&keywords=white+fragility&qid=1591124336&sprefix=white+fra%2Caps%2C173&sr=8-1">White Fragility: Why It's So Hard for White People to Talk About Racism</a><br>- Robin Diangelo
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.amazon.com/Longer-Talking-White-People-About/dp/1635572959/
+      </a>ref=sr_1_1?dchild=1&keywords=Why+I%E2%80%99m+No+Longer+Talking+to+White+People+About+Race&qid=1591124008&sr=8-1">Why I’m No Longer Talking to White People About Race</a><br>- Reni Eddo-Lodge
+      </li>
+      </ul>
+      <h3>Instagram accounts to follow </h3>
+
+
+      <ul>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.instagram.com/blklivesmatter/?hl=en">Black Lives Matter</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.instagram.com/colorofchange/?hl=en">Color of Change</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.instagram.com/privtoprog/?hl=en">From Privilege to Progress</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.instagram.com/naacp/?hl=en">NAACP</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.instagram.com/showingupforracialjustice/?hl=en">Showing up for
+      </a>Racial Justice</a>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.instagram.com/civilrightsorg/?hl=en">The Leadership Conference
+      </a>on Civil and Human Rights</a>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.instagram.com/unitedwedream/?hl=en">United We Dream</a>
+      </li>
+      </li>
+      </ul>
+      <h3>Educational resources for kids </h3>
+
+
+      <ul>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://docs.google.com/document/d/
+      </a>1S5uckFHCA_XZkxG0Zg5U4GQGbY_RklZARwu43fqJH0E/mobilebasic#id.k97xgormb6tw">Anti-Racism for Beginners</a>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.commonsensemedia.org/lists/
+      </a>coretta-scott-king-book-award-winners">Books for kids</a>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.pbs.org/parents/thrive/
+      </a>teaching-your-child-about-black-history-month">Teaching your child about Black history</a>
+      </li>
+      </ul>
+      <h3>How can I help and show my support? </h3>
+
+
+      <ul>
+
+      <li>Donate locally to an organization above or <a target="_blank" rel="noopener" href="https://blacklivesmatters.carrd.co/#donate">donate nationally</a>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://blacklivesmatters.carrd.co/#educate">Educate yourself and others</
+      </a>a>
+
+      <li>Post and share resources on your social media channels
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://blacklivesmatters.carrd.co/#petitions">Sign petitions</a>
+      </li>
+
+      <li>Support black-owned businesses
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://blacklivesmatters.carrd.co/#text">Text or call</a>
+      </li>
+
+      <li>
+        <a target="_blank" rel="noopener" href="https://www.u-ca.org/">The Union for Contemporary Art</a>: They are using
+      </li>their print shop to print posters and give them to the Omaha community
+      </li>
+      </ul>
+      <p>Image here
+      </p>
+      <p>
+        <em>Thank you for supporting and advocating for members of underrepresented racial groups in our community. Know of another great resource to add to the list? Submit it <a target="_blank" rel="noopener" href="https://flywheel.typeform.com/to/prahBr">here</a>. </em>
+      </p>
     </main>
   </Layout>
 </template>
 
 <script>
 export default {
-  data: () => ({
-    businesses: [],
-    shownCategories: [],
-    searchText: '',
-  }),
   metaInfo: {
-    title: 'Support Black Business in Omaha'
+    title: 'Rise, a Flywheel Employee Resource Group'
   },
-  created() {
-    this.shownCategories = this.allCategories
-    this.businesses = this.shownBusinesses
-    console.log(this.businesses)
-  },
-  watch: {
-    searchText(entered) {
-      if(entered != '') {
-        this.shownCategories = this.allCategories
-      }
-    }
-  },
-  methods: {
-    trimUrl(urlString) {
-      return urlString.replace(/https?:\/\//, '').replace(/\/$/, '')
-    },
-    formatAddress(address) {
-      if(address) {
-        return address.split('Omaha').join('\nOmaha')
-      }
-      return "Unknown"
-    }
-  },
-  computed: {
-    allCategories() {
-      return [...new Set(
-        this.$page.allGoogleSheet.edges.map(bus => bus.node.Category || 'Misc')
-      )]
-    },
-    shownBusinesses() {
-      let businesses = this.$page.allGoogleSheet.edges
-
-      if(this.searchText) {
-        const comparison = new RegExp(this.searchText, 'ig')
-        businesses = businesses.filter(bus => {
-          return bus.node.Business_name.match(comparison)
-        })
-      } else {
-        businesses = businesses.filter(bus => this.shownCategories.includes(bus.node.Category))
-      }
-
-      return businesses
-    }
-  }
 }
 </script>
 
 <style lang="scss">
-.intro {
-  grid-column: span 2;
-  max-width: 40rem;
-}
 
-.business-filter {
-  margin-top: 3rem;
-
-  @media(min-width: 800px) {
-    top: 1rem;
-    position: sticky;
-  }
-
-  fieldset {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
-    padding: 3rem 1rem 1rem;
-    border: none;
-    border-radius: 2px;
-    background: var(--lightGray);
-
-    & + fieldset {
-      margin-top: 1rem;
-    }
-
-    input[type=text] {
-      background: transparent;
-      padding: .5rem 0;
-      border: none;
-      border-bottom: 2px solid;
-      font-size: inherit;
-      font-family: inherit;
-    }
-
-    label {
-      position: relative;
-      display: flex;
-      align-items: center;
-
-      &.sr {
-        grid-column: 1 / -1;
-      }
-    }
-
-    input[type=checkbox] {
-
-      & + label:before {
-        content: '';
-        width: 1em;
-        height: 1em;
-        border: 2px solid;
-        display: inline-block;
-        margin-right: .75em;
-        vertical-align: middle;
-        background: transparent;
-      }
-
-      &:checked {
-        & + label:before {
-          background: var(--darkerGray);
-        }
-
-        & + label:after {
-          content: '';
-          width: .7em;
-          height: .4em;
-          border-bottom: 2px solid var(--white);
-          border-left: 2px solid var(--white);
-          transform: rotate(-45deg);
-          display: inline-block;
-          position: absolute;
-          left: .15em;
-          top: .4em;
-        }
-      }
-    }
-
-    legend {
-      font-weight: bold;
-      padding: 0;
-      display: block;
-      position: relative;
-      top: 1.5rem;
-    }
-
-    div {
-      margin: 0 0 .25rem;
-    }
-  }
-}
-
-.business-list {
-  padding: 0;
-  list-style-type: none;
-  margin: 4rem 0 0;
-  display: flex;
-  flex-wrap: wrap;
-
-  .business {
-    padding: 0;
-    margin-bottom: 6rem;
-    display: inline-block;
-    line-height: 1.8;
-    margin-right: 2rem;
-    width: 100%;
-
-    @media(min-width: 640px) and (max-width: 799px) {
-      flex: 1 1 40%;
-
-      &:nth-of-type(even) {
-        margin-right: 0;
-      }
-    }
-
-    @media(min-width: 1080px) {
-      max-width: unset;
-      flex: 1 1 26rem
-    }
-
-    h2 a {
-      color: inherit;
-      text-decoration: none;
-    }
-
-    &__address {
-      white-space: pre-line;
-      margin-top: -1.2rem;
-    }
-  }
-
-  .details {
-    display: flex;
-    margin: 0 0 1rem;
-    align-content: flex-start;
-    align-items: flex-start;
-    line-height: 1.2;
-
-    &.category {
-      border: 2px solid;
-      padding: .2em .75em .3em;
-      line-height: 1;
-      display: inline-block;
-      border-radius: 2em;
-      margin-top: .5rem;
-      margin-left: -2px;
-    }
-
-    a {
-      word-break: break-word;
-    }
-
-    strong {
-      flex: 0 0 7em;
-      text-transform: uppercase;
-      font-size: .75rem;
-      padding-top: .25rem;
-    }
-  }
-}
-
-.error {
-  width: auto !important;
-  max-width: unset !important;
-
-  h2 {
-    color: var(--darkRed);
-  }
-}
-
-.fade {
-	&-enter-active,
-	&-leave-active {
-		transition: all .45s cubic-bezier(0.645, 0.045, 0.355, 1);
-	}
-
-	&-leave-active {
-    position: absolute;
-    width: 100%;
-	}
-
-	&-enter, &-leave-to {
-		opacity: 0;
-	}
-
-  &-move {
-    transition: transform .45s cubic-bezier(0.86, 0, 0.07, 1);
-  }
-
-	&-enter {
-		transform: translateY(1rem);
-	}
-
-	&-leave-to {
-		transform: translateY(1rem);
-	}
-}
 </style>

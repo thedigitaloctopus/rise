@@ -25,10 +25,13 @@ query {
   --darkGray: #434344;
   --darkerGray: #262727;
   --darkRed: #ba3e51;
+
+  font-size: 18px;
 }
 
 *, *:before, *:after {
   box-sizing: border-box;
+  position: relative;
 }
 
 *:focus,
@@ -41,29 +44,17 @@ body {
   font-family: 'Libre Franklin', -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   margin: 4rem 0 0;
   padding: 0;
-  line-height: 1.4;
+  line-height: 1.5;
   color: var(--darkerGray);
   background: var(--white);
   max-width: 100vw;
-  overflow-x: hidden;
 }
 
 .layout {
   width: 100%;
-  margin: 0 auto;
-  padding: 0 1rem;
-
-  @media(min-width: 800px) {
-    display: grid;
-    grid-template-columns: 20rem 1fr;
-    grid-gap: 2rem;
-    padding: 0 2rem;
-    align-items: stretch;
-  }
-
-  @media(min-width: 1080px) {
-    padding: 0 3rem;
-  }
+  margin: 2rem auto;
+  padding: 2rem;
+  max-width: 42rem;
 }
 
 h1 {
@@ -77,19 +68,24 @@ h1 {
 
 h2 {
   font-size: 1.8rem;
-  margin: 0 0 1rem;
-  line-height: 1em;
-  border-bottom: 1px solid;
-  padding-bottom: 1rem;
+  line-height: 1.2em;
+  margin-top: 2.5em;
+}
+
+h3 {
+  margin-top: 2.5em;
 }
 
 a, a:visited {
   color: #01516e;
 }
 
-.subhead {
-  font-size: 1.4rem;
-  color: var(--gray);
+ul {
+  list-style-type: square;
+
+  li {
+    margin-top: .5rem;
+  }
 }
 
 .sr {
