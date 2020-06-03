@@ -1,11 +1,13 @@
 <template>
   <div class="layout">
+    <header>
+    </header>
     <slot/>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <g-image src="~/favicon.png" class="footer__logo" width="66"></g-image>
       <p>This site is made possible by members of Flywheel's Employee Resource Group, Rise.</p>
       <p>Rise's mission​ is to provide a safe, open environment to promote, educate, and advocate for people of underrepresented racial groups and allies.</p>
-    </footer>
+    </footer> -->
   </div>
 </template>
 
@@ -19,19 +21,75 @@ query {
 
 <style lang="scss">
 :root {
-  --white: #ffffff;
+  --ink: var(--gray-dark);
+  --paper: var(--white);
+
+  //Green
+  --green: #51bb7b;
+  --green-dark: #267048;
+  --green-dark50: #419564;
+  --green75: #add9b8;
+  --green25: #d4ead9;
+
+  //Blue
+  --blue: #50c6db;
+  --linkblue: #00C1DB;
+  --blue-dark50: #338199;
+  --blue75: #b0e0ea;
+  --blue25: #d6eef2;
+  --blue-dark: #01516E;
+
+  //Purple
+  --purple: #8351a0;
+  --purple-dark: #4e2760;
+  --purple-dark50: #693f7e;
+  --purple75: #b69cc8;
+  --purple25: #d5c9e2;
+
+  //Orange
+  --orange: #f47820;
+  --orange-dark: #8e4402;
+  --orange-dark50: #bb5f23;
+  --orange75: #fab889;
+  --orange25: #fdd9be;
+
+  //Yellow
+  --yellow: #f0ce15;
+  --yellow-dark: #9a7700;
+  --yellow-dark50: #c3a028;
+  --yellow75: #f6e299;
+  --yellow25: #f9edc9;
+  --yellowish: #F7EBB4;
+
+  //Red
+  --red: #ef4e65;
+  --red-dark: #8c2738;
+  --red-dark50: #ba3e51;
+  --red75: #f18085;
+  --red25: #fad1cd;
+
+  //Gray
   --gray: #5d5e5e;
-  --lightGray: #e7e7e7;
-  --darkGray: #434344;
-  --darkerGray: #262727;
-  --darkRed: #ba3e51;
+  --gray-dark: #262727;
+  --gray-dark50: #434344;
+  --gray75: #9f9c9c;
+  --gray25: #c7c4c4;
+  --gray15: #e7e7e7;
+  --gray5: #f7f6f6;
+  --gray2: #fafafa;
+  --gray1: #fcfcfc;
+
+  --white: #ffffff;
 
   font-size: 18px;
+  color: var(--ink);
+  background: var(--paper);
 }
 
 *, *:before, *:after {
   box-sizing: border-box;
   position: relative;
+  font-family: inherit;
 }
 
 *:focus,
@@ -41,8 +99,8 @@ input.sr:focus + label {
 }
 
 body {
-  font-family: 'Libre Franklin', -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-  margin: 4rem 0 0;
+  font-family: 'Museo Sans Rounded', -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  margin: 0;
   padding: 0;
   line-height: 1.5;
   color: var(--darkerGray);
@@ -50,42 +108,74 @@ body {
   max-width: 100vw;
 }
 
+header {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--yellowish);
+}
+
 .layout {
   width: 100%;
-  margin: 2rem auto;
-  padding: 2rem;
-  max-width: 42rem;
+  margin: 0;
+  padding: 0;
 }
 
-h1 {
-  font-size: 3rem;
-  line-height: 1.2em;
-
-  @media(min-width: 800px) {
-    font-size: 3.6rem;
-  }
+.container {
+  width: 100%;
+  margin: 4rem auto;
+  max-width: 60rem;
+  padding: 1rem;
 }
 
-h2 {
-  font-size: 1.8rem;
+h1, h2, h3 {
+  margin: 0 auto 1rem;
+  font-size: 2.6rem;
+  font-weight: normal;
   line-height: 1.2em;
-  margin-top: 2.5em;
+  max-width: 20em;
 }
 
 h3 {
-  margin-top: 2.5em;
-}
-
-a, a:visited {
-  color: #01516e;
+  font-size: 1.8rem;
+  margin: 0 0 2rem;
 }
 
 ul {
-  list-style-type: square;
+  margin: 2rem auto;
+  padding: 0;
+  list-style-type: none;
+}
 
-  li {
-    margin-top: .5rem;
-  }
+hr {
+  border: none;
+  border-top: 2px solid var(--gray25);
+  margin: 4rem 0;
+}
+
+a {
+  color: inherit;
+}
+
+.button {
+  background: var(--blue);
+  padding: .75em 2em;
+  border-radius: 2em;
+  color: var(--white);
+  text-decoration: none;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  display: inline-block;
+  letter-spacing: .05em;
+}
+
+.centered {
+  text-align: center;
+}
+
+.span-all {
+  grid-column: 1 / -1;
 }
 
 .sr {
