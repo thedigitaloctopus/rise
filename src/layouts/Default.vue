@@ -2,7 +2,7 @@
   <div class="layout">
   <BLM />
     <header>
-      <g-image id="logo" src="~/assets/images/rise-logo.svg" alt="RISE" />
+      <g-image id="logo" class="fade-in-up" src="~/assets/images/rise-logo.svg" alt="RISE" />
     </header>
     <slot/>
   </div>
@@ -87,15 +87,22 @@ export default {
 
   --white: #ffffff;
 
-  font-size: 18px;
+  --transition: .65s cubic-bezier(0.215, 0.610, 0.355, 1);
+
   color: var(--ink);
   background: var(--paper);
+  scroll-behavior: smooth;
+
+  @media(min-width: 800px) {
+    font-size: 18px;
+  }
 }
 
 *, *:before, *:after {
   box-sizing: border-box;
   position: relative;
   font-family: inherit;
+  max-width: 100%;
 }
 
 *:focus,
@@ -145,10 +152,14 @@ main > section:first-of-type .container {
 
 h1, h2, h3 {
   margin: 0 auto 1rem;
-  font-size: 2.6rem;
+  font-size: 2rem;
   font-weight: normal;
   line-height: 1.2em;
   max-width: 20em;
+
+  @media(min-width: 800px) {
+    font-size: 2.6rem;
+  }
 }
 
 h3 {
@@ -176,6 +187,10 @@ a {
 img {
   width: 100%;
   max-width: 100%;
+
+  @media (min-width: 800px) {
+    width: 100%;
+  }
 }
 
 .button {
@@ -184,7 +199,7 @@ img {
   border-radius: 2em;
   color: var(--white);
   text-decoration: none;
-  margin-top: 2rem;
+  margin: 2rem 0 4rem;
   text-transform: uppercase;
   display: inline-block;
   letter-spacing: .05em;
@@ -207,12 +222,60 @@ img {
   opacity: 0;
 }
 
-h2, h3, a, li, img, p {
-  animation: fadeIn .7s ease-out;
-  transition: opacity .7s cubic-bezier(0,.51,.32,1), transform .7s cubic-bezier(0,.51,.32,1);
+.fade-in-up {
+  animation: fadeInUp var(--transition) forwards;
+  opacity: 0;
 }
 
-@keyframes fadein {
+.fade-in-left {
+  animation: fadeInLeft var(--transition) forwards;
+  animation-delay: .2s;
+  opacity: 0;
+}
+
+.fade-in-right {
+  opacity: 0;
+  animation: fadeInRight var(--transition) forwards;
+  animation-delay: .4s;
+
+  & + .fade-in-right {
+    animation-delay: .6s;
+
+    & + .fade-in-right {
+      animation-delay: .8s;
+
+      & + .fade-in-right {
+        animation-delay: 1s;
+      }
+
+    }
+
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-1rem)
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(1rem)
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0)
+  }
+}
+
+@keyframes fadeInUp {
   from {
     opacity: 0;
     transform: translateY(1rem)

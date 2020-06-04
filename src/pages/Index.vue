@@ -4,12 +4,12 @@
       <section class="color yellowish bleed-bottom">
 
         <div class="container split">
-          <g-image src="~/assets/images/Bre.jpg" immediate="true"/>
+          <g-image src="~/assets/images/Bre.jpg" immediate="true" class="fade-in-left" alt="" />
           <div>
-            <p class="pre-heading">What we stand for</p>
-            <h1>We stand with underrepresented<br>racial&nbsp;groups</h1>
+            <p class="pre-heading fade-in-right">What we stand for</p>
+            <h1 class="fade-in-right">We stand with underrepresented<br>racial&nbsp;groups</h1>
 
-            <p>Flywheel stands in solidarity with the fight against systemic racism, white supremacy, and the historic oppression of the Black community, both nationally and in our hometown community of Omaha, Nebraska. We believe in being excellent to each other, no matter what your skin color is. This page is dedicated to providing educational resources for the local Omaha community.
+            <p class="fade-in-right">Flywheel stands in solidarity with the fight against systemic racism, white supremacy, and the historic oppression of the Black community, both nationally and in our hometown community of Omaha, Nebraska. We believe in being excellent to each other, no matter what your skin color is. This page is dedicated to providing educational resources for the local Omaha community.
             </p>
           </div>
         </div>
@@ -24,7 +24,7 @@
             <p>Our mission is to provide a safe, open environment to promote, educate, and advocate for people of underrepresented racial groups and allies at Flywheel.</p>
             <a href="#resources" class="button">Resources</a>
           </div>
-          <g-image src="~/assets/images/Liv.jpg" />
+          <g-image src="~/assets/images/Liv.jpg" alt=""/>
         </div>
       </section>
 
@@ -75,7 +75,7 @@
       <section>
         <div class="container narrow">
 
-          <h2 class="centered">Resources</h2>
+          <h2 id="resources" class="centered">Resources</h2>
 
           <h3>How to be an ally </h3>
 
@@ -173,10 +173,10 @@
 
       <section class="color yellowish bleed-top">
         <div class="container split">
-          <g-image src="~/assets/images/Cam.jpg" />
+          <g-image src="~/assets/images/Cam.jpg" alt=""/>
           <div>
             <h2>Thank you for supporting and advocating</h2>
-            <p>Thank you for supporting and advocating for members of underrepresented racial groups in our community. Know of another great resource to add to the list? Submit it <a href="https://flywheel.typeform.com/to/prahBr" target="_blank" rel="noopener">here</a>.</p>
+            <p>Thank you for supporting and advocating for members of underrepresented racial groups in our community. Know of another great resource to add to the list? Submit it <a href="https://flywheel.typeform.com/to/prahBr" target="_blank" rel="noopener">here<span class="sr"> to add a new resource to the list.</span></a>.</p>
           </div>
         </div>
       </section>
@@ -191,17 +191,20 @@ export default {
   },
   mounted () {
     if (window && 'IntersectionObserver' in window) {
-    const animatedElements = document.querySelectorAll('h2, h3, a, li, img, .pre-heading');
+    const animatedElements = document.querySelectorAll('h2, h3, .button, li, img, p');
 
 		const onChange = (changes, observer) => {
 			changes.forEach((change) => {
-        if (change.intersectionRatio > 0.5
-        // || change.isIntersecting || target.parentNode.boundingClientRect.y >= window.offsetTop
+        if (change && change?.target && (
+            change.intersectionRatio > 0.5
+            || change.isIntersecting
+            || target.parentNode.boundingClientRect.y >= window.offsetTop
+          )
         ) {
 					setTimeout(() => {
-						change.target.classList.remove('hidden');
+						change?.target.classList.remove('hidden');
 					}, 200);
-					observer.unobserve(change.target);
+					observer.unobserve(change?.target);
 				}
 			});
 		};
@@ -220,7 +223,7 @@ export default {
 			if ((rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth)) || (window.innerHeight || document.documentElement.clientHeight) - rect.top > 0) {
 				return;
 			}
-			el.classList.add('hidden');
+			el.classList.add('hidden', 'transition');
 			scrollObserver.observe(el);
 		});
 	}
@@ -231,6 +234,13 @@ export default {
 <style lang="scss">
 section {
   padding: 4rem 0;
+
+  @media (max-width: 799px) {
+    & + section .container {
+      padding-top: 0;
+      margin-top: 0;
+    }
+  }
 }
 
 .pre-heading {
@@ -263,8 +273,25 @@ section {
 .bleed-bottom {
   padding-bottom: 0;
 
+  @media (max-width: 799px) {
+    .container {
+      margin-bottom: 0;
+    }
+  }
+
   img {
-    margin: 3rem 0 -6rem;
+    margin-bottom: 2rem;
+  }
+
+  @media(min-width: 800px) {
+
+    img {
+      margin: 3.5rem 0 -6rem;
+    }
+  }
+
+  p:last-of-type {
+    margin-bottom: 2rem;
   }
 }
 
@@ -283,5 +310,9 @@ section {
 .hidden {
   opacity: 0;
   transform: translateY(1rem);
+}
+
+.transition {
+  transition: opacity var(--transition), transform var(--transition);
 }
 </style>
