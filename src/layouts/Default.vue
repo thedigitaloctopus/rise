@@ -133,7 +133,7 @@ main > section:first-of-type .container {
   width: 100%;
   margin: 4rem auto;
   max-width: 60rem;
-  padding: 1rem;
+  padding: 1.5rem;
 }
 
 h1, h2, h3 {
@@ -141,9 +141,9 @@ h1, h2, h3 {
   font-size: 2rem;
   font-weight: normal;
   line-height: 1.2em;
-  max-width: 20em;
 
   @media(min-width: 800px) {
+    max-width: 20em;
     font-size: 2.6rem;
   }
 }
@@ -167,7 +167,7 @@ hr {
   border: none;
   border-top: 2px solid var(--gray25);
   margin: 4rem 0;
-  transform-origin: center;
+  transform-origin: left;
   transform: scaleX(1);
 }
 
