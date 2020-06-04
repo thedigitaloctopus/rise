@@ -1,13 +1,10 @@
 <template>
   <div class="layout">
+  <BLM />
     <header>
+      <g-image id="logo" src="~/assets/images/rise-logo.svg" alt="RISE" />
     </header>
     <slot/>
-    <!-- <footer class="footer">
-      <g-image src="~/favicon.png" class="footer__logo" width="66"></g-image>
-      <p>This site is made possible by members of Flywheel's Employee Resource Group, Rise.</p>
-      <p>Rise's mission​ is to provide a safe, open environment to promote, educate, and advocate for people of underrepresented racial groups and allies.</p>
-    </footer> -->
   </div>
 </template>
 
@@ -18,6 +15,15 @@ query {
   }
 }
 </static-query>
+
+<script>
+import BLM from '~/components/BLM'
+
+export default {
+  components: { BLM },
+  comments: true
+}
+</script>
 
 <style lang="scss">
 :root {
@@ -109,17 +115,25 @@ body {
 }
 
 header {
-  padding: 2rem;
+  padding: 4rem 2rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background: var(--yellowish);
+
+  #logo {
+    width: 6rem;
+  }
 }
 
 .layout {
   width: 100%;
   margin: 0;
   padding: 0;
+}
+
+main > section:first-of-type .container {
+  margin-top: 0;
 }
 
 .container {
@@ -156,6 +170,12 @@ hr {
 
 a {
   color: inherit;
+  text-decoration-color: var(--blue);
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
 }
 
 .button {
@@ -172,6 +192,7 @@ a {
 
 .centered {
   text-align: center;
+  margin-bottom: 2rem;
 }
 
 .span-all {
@@ -186,20 +207,19 @@ a {
   opacity: 0;
 }
 
-.footer {
-  padding: 2rem 0;
-  grid-column: 1 / -1;
-  font-size: .9rem;
-  margin-top: 6rem;
+h2, h3, a, li, img, p {
+  animation: fadeIn .7s ease-out;
+  transition: opacity .7s cubic-bezier(0,.51,.32,1), transform .7s cubic-bezier(0,.51,.32,1);
+}
 
-  &__logo {
-    float: left;
-    margin: .3rem 1rem 2rem 0;
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: translateY(1rem)
   }
-
-  p {
-    max-width: 46em;
-    margin-top: 0;
+  to {
+    opacity: 1;
+    transform: translateY(0)
   }
 }
 </style>

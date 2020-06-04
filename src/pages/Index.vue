@@ -1,10 +1,10 @@
 <template>
   <Layout>
     <main>
-      <section class="color yellowish">
+      <section class="color yellowish bleed-bottom">
 
         <div class="container split">
-          <g-image src=""></g-image>
+          <g-image src="~/assets/images/Bre.jpg" immediate="true"/>
           <div>
             <p class="pre-heading">What we stand for</p>
             <h1>We stand with underrepresented<br>racial&nbsp;groups</h1>
@@ -24,7 +24,7 @@
             <p>Our mission is to provide a safe, open environment to promote, educate, and advocate for people of underrepresented racial groups and allies at Flywheel.</p>
             <a href="#resources" class="button">Resources</a>
           </div>
-          <g-image></g-image>
+          <g-image src="~/assets/images/Liv.jpg" />
         </div>
       </section>
 
@@ -75,9 +75,7 @@
       <section>
         <div class="container narrow">
 
-          <h2>Resources</h2>
-
-          <hr />
+          <h2 class="centered">Resources</h2>
 
           <h3>How to be an ally </h3>
 
@@ -169,9 +167,18 @@
             <li><a target="_blank" rel="noopener" href="https://blacklivesmatters.carrd.co/#text">Text or call</a></li>
             <li><a target="_blank" rel="noopener" href="https://www.u-ca.org/">The Union for Contemporary Art</a>: They are using their print shop to print posters and give them to the Omaha community</li>
           </ul>
-
         </div>
+      </section>
 
+
+      <section class="color yellowish bleed-top">
+        <div class="container split">
+          <g-image src="~/assets/images/Cam.jpg" />
+          <div>
+            <h2>Thank you for supporting and advocating</h2>
+            <p>Thank you for supporting and advocating for members of underrepresented racial groups in our community. Know of another great resource to add to the list? Submit it <a href="https://flywheel.typeform.com/to/prahBr" target="_blank" rel="noopener">here</a>.</p>
+          </div>
+        </div>
       </section>
     </main>
   </Layout>
@@ -181,6 +188,42 @@
 export default {
   metaInfo: {
     title: 'Rise, a Flywheel Employee Resource Group'
+  },
+  mounted () {
+    if (window && 'IntersectionObserver' in window) {
+    const animatedElements = document.querySelectorAll('h2, h3, a, li, img, .pre-heading');
+
+		const onChange = (changes, observer) => {
+			changes.forEach((change) => {
+        if (change.intersectionRatio > 0.5
+        // || change.isIntersecting || target.parentNode.boundingClientRect.y >= window.offsetTop
+        ) {
+					setTimeout(() => {
+						change.target.classList.remove('hidden');
+					}, 200);
+					observer.unobserve(change.target);
+				}
+			});
+		};
+
+		const config = {
+			root: null,
+			rootMargin: '20px',
+			threshold: 1
+		};
+
+		const scrollObserver = new IntersectionObserver(onChange, config);
+
+		animatedElements.forEach((el) => {
+			// Make sure the element isn't already in the viewport
+			const rect = el.getBoundingClientRect();
+			if ((rect.top >= 0 && rect.left >= 0 && rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) && rect.right <= (window.innerWidth || document.documentElement.clientWidth)) || (window.innerHeight || document.documentElement.clientHeight) - rect.top > 0) {
+				return;
+			}
+			el.classList.add('hidden');
+			scrollObserver.observe(el);
+		});
+	}
   },
 }
 </script>
@@ -193,6 +236,7 @@ section {
 .pre-heading {
   text-transform: uppercase;
   color: var(--blue);
+  line-height: 1em;
 }
 
 .split {
@@ -214,5 +258,30 @@ section {
 
 .very-light-gray {
   background: var(--gray2);
+}
+
+.bleed-bottom {
+  padding-bottom: 0;
+
+  img {
+    margin: 3rem 0 -6rem;
+  }
+}
+
+.bleed-top {
+  padding-top: 0;
+
+  h2 {
+    margin-top: 4rem;
+  }
+
+  img {
+    margin-top: -6rem;
+  }
+}
+
+.hidden {
+  opacity: 0;
+  transform: translateY(1rem);
 }
 </style>
