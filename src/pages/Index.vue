@@ -11,7 +11,7 @@
             <p class="pre-heading fade-in-right">What we stand for</p>
             <h1 class="fade-in-right">We stand with underrepresented<br>racial&nbsp;groups</h1>
 
-            <p class="fade-in-right">Flywheel stands in solidarity with the fight against systemic racism, white supremacy, and the historic oppression of the Black community, both nationally and in our hometown community of Omaha, Nebraska. We believe in being excellent to each other, no matter what your skin color is. This page is dedicated to providing educational resources for the local Omaha community.
+            <p class="fade-in-right"><a href="https://getflywheel.com/about/" target="_blank">Flywheel</a> stands in solidarity with the fight against systemic racism, white supremacy, and the historic oppression of the Black community, both nationally and in our hometown community of Omaha, Nebraska. We believe in being excellent to each other, no matter what your skin color is. This page is dedicated to providing educational resources for the local Omaha community.
             </p>
           </div>
         </div>
@@ -22,8 +22,8 @@
         <div class="container split">
           <div>
             <p class="pre-heading">Who we are</p>
-            <h2>Rise is one of Flywheel’s Employee Resource Groups </h2>
-            <p>Our mission is to provide a safe, open environment to promote, educate, and advocate for people of underrepresented racial groups and allies at Flywheel.</p>
+            <h2>Rise is one of Flywheel’s Employee Resource Groups</h2>
+            <p>Our mission is to provide a safe, open environment to promote, educate, and advocate for people of underrepresented racial groups and allies at <a href="https://getflywheel.com/layout/life-at-flywheel/" target="_blank">Flywheel</a>.</p>
             <a href="#resources" class="button">Resources</a>
           </div>
           <g-image src="~/assets/images/Jason.jpg" alt=""/>
