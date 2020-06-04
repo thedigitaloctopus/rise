@@ -157,6 +157,10 @@ ul {
   margin: 2rem auto;
   padding: 0;
   list-style-type: none;
+
+  li {
+    margin-bottom: .25rem;
+  }
 }
 
 hr {
@@ -167,7 +171,6 @@ hr {
 
 a {
   color: inherit;
-  text-decoration-color: var(--blue);
 }
 
 img {

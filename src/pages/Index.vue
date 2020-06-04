@@ -26,7 +26,7 @@
             <p>Our mission is to provide a safe, open environment to promote, educate, and advocate for people of underrepresented racial groups and allies at Flywheel.</p>
             <a href="#resources" class="button">Resources</a>
           </div>
-          <g-image src="~/assets/images/Liv.jpg" alt=""/>
+          <g-image src="~/assets/images/Jason.jpg" alt=""/>
         </div>
       </section>
 
@@ -177,7 +177,7 @@
         <div class="container split">
           <g-image src="~/assets/images/Cam.jpg" alt=""/>
           <div>
-            <h2>Thank you for supporting and advocating</h2>
+            <h2>Change starts locally</h2>
             <p>Thank you for supporting and advocating for members of underrepresented racial groups in our community. Know of another great resource to add to the list? Submit it <a href="https://flywheel.typeform.com/to/prahBr" target="_blank" rel="noopener">here<span class="sr"> to add a new resource to the list.</span></a>.</p>
           </div>
         </div>
