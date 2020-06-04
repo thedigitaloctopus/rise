@@ -65,7 +65,7 @@
             <li><a target="_blank" rel="noopener" href="https://northstar360.org/">Northstar Foundation</a></li>
             <li><a target="_blank" rel="noopener" href="http://www.omahatalons.org/">Omaha Talons</a></li>
             <li><a target="_blank" rel="noopener" href="https://www.thesimplefoundation.org/#homeheader">The Simple Foundation</a></li>
-            <li><a target="_blank" rel="noopener" href="https://www.u-ca.org/">Union for Contemporary Arts</a></li>
+            <li><a target="_blank" rel="noopener" href="https://www.u-ca.org/">Union for Contemporary Art</a></li>
             <li><a target="_blank" rel="noopener" href="https://www.urbanleagueneb.org/">Urban League of Nebraska</a></li>
             <li><a target="_blank" rel="noopener" href="https://www.yggomaha.com/">You Go Girl</a></li>
             <li><a target="_blank" rel="noopener" href="https://www.ybiomaha.com/">Young Black and Influential</a></li>
