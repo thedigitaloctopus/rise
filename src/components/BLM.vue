@@ -73,7 +73,7 @@ fffffffffttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttttt
 <!-- https://ascii.co.uk/animated-art/blacklivesmatter-animated-ascii-art-by-lizadonnelly.html -->`
 	}),
 	created() {
-		if (!document) return
+		if(typeof window == 'undefined') return
 		document.documentElement.insertAdjacentHTML('afterbegin', this.blackLivesMatter)
 	},
 	comments: true

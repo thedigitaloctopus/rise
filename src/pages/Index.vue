@@ -190,7 +190,8 @@ export default {
     title: 'Rise, a Flywheel Employee Resource Group'
   },
   mounted () {
-    if (window && 'IntersectionObserver' in window) {
+    if(typeof window == 'undefined') return
+    if ('IntersectionObserver' in window) {
     const animatedElements = document.querySelectorAll('h2, h3, .button, li, img, p');
 
 		const onChange = (changes, observer) => {
