@@ -119,6 +119,7 @@ body {
   color: var(--darkerGray);
   background: var(--white);
   max-width: 100vw;
+  font-display: swap;
 }
 
 header {
