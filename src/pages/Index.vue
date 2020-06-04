@@ -194,7 +194,7 @@ export default {
   mounted () {
     if(typeof window == 'undefined') return
     if ('IntersectionObserver' in window) {
-    const animatedElements = document.querySelectorAll('h2, h3, .button, li, img, p');
+    const animatedElements = document.querySelectorAll('h2, h3, .button, li, img, p, hr');
 
 		const onChange = (changes, observer) => {
 			changes.forEach((change) => {
@@ -320,6 +320,10 @@ section {
 .hidden {
   opacity: 0;
   transform: translateY(1rem);
+}
+
+hr.hidden {
+  transform: translateY(0) scaleX(0.01);
 }
 
 .transition {

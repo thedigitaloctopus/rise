@@ -167,6 +167,8 @@ hr {
   border: none;
   border-top: 2px solid var(--gray25);
   margin: 4rem 0;
+  transform-origin: center;
+  transform: scaleX(1);
 }
 
 a {
