@@ -1,7 +1,9 @@
 <template>
   <Layout>
     <main>
-      <section class="color yellowish bleed-bottom">
+      <section class="color yellowish bleed-bottom swipe-in">
+
+        <g-image id="logo" class="fade-in-up" src="~/assets/images/rise-logo.svg" alt="RISE" />
 
         <div class="container split">
           <g-image src="~/assets/images/Bre.jpg" immediate="true" class="fade-in-left" alt="" />
@@ -244,6 +246,13 @@ section {
   }
 }
 
+#logo {
+  width: 6rem;
+  display: block;
+  margin: auto;
+  padding: 0 0 6rem;
+}
+
 .pre-heading {
   text-transform: uppercase;
   color: var(--blue);
@@ -315,5 +324,19 @@ section {
 
 .transition {
   transition: opacity var(--transition), transform var(--transition);
+}
+
+.swipe-in {
+  transform-origin: bottom;
+  animation: swipeIn .6s cubic-bezier(1, 0, 0, 1) forwards;
+}
+
+@keyframes swipeIn {
+  from {
+    transform: scaleY(0)
+  }
+  to {
+    transform: scaleY(1)
+  }
 }
 </style>

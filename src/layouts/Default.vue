@@ -1,9 +1,6 @@
 <template>
   <div class="layout">
-  <BLM />
-    <header>
-      <g-image id="logo" class="fade-in-up" src="~/assets/images/rise-logo.svg" alt="RISE" />
-    </header>
+    <BLM />
     <slot/>
   </div>
 </template>
@@ -122,18 +119,6 @@ body {
   font-display: swap;
 }
 
-header {
-  padding: 4rem 2rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: var(--yellowish);
-
-  #logo {
-    width: 6rem;
-  }
-}
-
 .layout {
   width: 100%;
   margin: 0;
@@ -225,28 +210,29 @@ img {
 
 .fade-in-up {
   animation: fadeInUp var(--transition) forwards;
+  animation-delay: .6s;
   opacity: 0;
 }
 
 .fade-in-left {
   animation: fadeInLeft var(--transition) forwards;
-  animation-delay: .2s;
+  animation-delay: .8s;
   opacity: 0;
 }
 
 .fade-in-right {
   opacity: 0;
   animation: fadeInRight var(--transition) forwards;
-  animation-delay: .4s;
+  animation-delay: 1s;
 
   & + .fade-in-right {
-    animation-delay: .6s;
+    animation-delay: 1.3s;
 
     & + .fade-in-right {
-      animation-delay: .8s;
+      animation-delay: 1.45s;
 
       & + .fade-in-right {
-        animation-delay: 1s;
+        animation-delay: 1.6s;
       }
 
     }
