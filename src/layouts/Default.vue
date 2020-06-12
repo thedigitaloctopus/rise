@@ -194,6 +194,11 @@ img {
   text-transform: uppercase;
   display: inline-block;
   letter-spacing: .05em;
+  transition: background .2s ease;
+
+  &:hover {
+    background: var(--blue-dark50);
+  }
 }
 
 .centered {

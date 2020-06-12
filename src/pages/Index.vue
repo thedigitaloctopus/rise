@@ -140,6 +140,7 @@
             <li><a target="_blank" rel="noopener" href="https://www.instagram.com/blklivesmatter/?hl=en">Black Lives Matter</a></li>
             <li><a target="_blank" rel="noopener" href="https://www.instagram.com/colorofchange/?hl=en">Color of Change</a></li>
             <li><a target="_blank" rel="noopener" href="https://www.instagram.com/privtoprog/?hl=en">From Privilege to Progress</a></li>
+            <li><a target="_blank" rel="noopener" href="https://www.instagram.com/malcolmxmemorial/">Malcolm X Memorial Foundation</a></li>
             <li><a target="_blank" rel="noopener" href="https://www.instagram.com/naacp/?hl=en">NAACP</a></li>
             <li><a target="_blank" rel="noopener" href="https://www.instagram.com/showingupforracialjustice/?hl=en">Showing up for Racial Justice</a></li>
             <li><a target="_blank" rel="noopener" href="https://www.instagram.com/civilrightsorg/?hl=en">The Leadership Conference on Civil and Human Rights</a></li>
@@ -178,7 +179,9 @@
           <g-image src="~/assets/images/Cam.jpg" alt=""/>
           <div>
             <h2>Change starts locally</h2>
-            <p>Thank you for supporting and advocating for members of underrepresented racial groups in our community. Know of another great resource to add to the list? Submit it <a href="https://flywheel.typeform.com/to/prahBr" target="_blank" rel="noopener">here<span class="sr"> to add a new resource to the list.</span></a>.</p>
+            <p>Thank you for supporting and advocating for members of underrepresented racial groups in our community. Check out <a href="https://www.connectblackomaha.com/" target="_blank" rel="noopener">Connect Black Omaha</a> to see a list of Black-owned businesses in Omaha.</p>
+
+            <p><a href="https://www.connectblackomaha.com/" class="button">Connect Black Omaha</a></p>
           </div>
         </div>
       </section>
