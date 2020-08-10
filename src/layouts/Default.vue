@@ -244,10 +244,13 @@ img {
       & + .fade-in-right {
         animation-delay: 1.6s;
       }
-
     }
-
   }
+}
+
+.no-margin {
+  margin-top: 0!important;
+  margin-bottom: 0!important;
 }
 
 @keyframes fadeInLeft {
