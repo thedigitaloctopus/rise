@@ -125,7 +125,7 @@ section {
 #logo {
   width: 6rem;
   display: block;
-  margin: auto;
+  margin: 3rem auto 0;
   padding: 0 0 6rem;
 }
 
