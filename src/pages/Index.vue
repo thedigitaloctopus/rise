@@ -1,6 +1,7 @@
 <template>
   <Layout>
     <main>
+      <Banner />
       <section class="color yellowish bleed-bottom swipe-in">
 
         <g-image id="logo" class="fade-in-up" src="~/assets/images/rise-logo.svg" alt="RISE" />
@@ -55,6 +56,7 @@
 import Organizations from '../components/Organizations'
 import Resources from '../components/Resources'
 import NewsletterBlock from '../components/NewsletterBlock'
+import Banner from '../components/Banner'
 
 export default {
   metaInfo: {
@@ -62,7 +64,7 @@ export default {
   },
 
   components: {
-    NewsletterBlock, Resources, Organizations
+    NewsletterBlock, Resources, Organizations, Banner
   },
 
   mounted () {
