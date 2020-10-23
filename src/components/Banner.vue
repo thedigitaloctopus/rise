@@ -1,7 +1,7 @@
 <template>
 	<header class="banner" ref="banner move-down">
 		<p>We’re counting on you to vote!</p>
-		<a class="button" href="/rise-poster-files.zip">Download&nbsp;posters</a>
+		<a class="button" href="/rise-poster-files.zip" target="_blank">Download&nbsp;posters</a>
 	</header>
 </template>
 
