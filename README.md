@@ -11,6 +11,14 @@ This is a basic Gridsome project, made from the default Gridsome Starter. The si
 
 Gridsome is a Vue-powered static site generator. Any .vue file in the `pages` directory becomes a page. (In this case, there's only one, but it's still statically generated.)
 
+## Adding new newsletters
+
+**If you duplicate a newsletter markdown file inside the `src/newsletters folder`, you should be able to just update its contents and have a new page automatically.** Just copy and paste the `issue-02.md` file, rename it (e.g., to `issue-03.md`) and update all its contents, including the `title` at the top and all the image links.
+
+**All markdown files in the `src/newsletters` folder become pages.** They're rendered with the `templates/Newsletter.vue` file, which is where most of the styling lives. Their path will be `/newsletter/:slug`, where `:slug` is a sluggified version of the `title`.
+
+**The newsletter CSS is very specific** and expects the content layout to stay exactly the same. (E.g., all pull quotes should be followed with images; articles always end with an `hr` and begin with a large image; the first paragraph after the `h2` of an article is actually the pre-title, relatively positioned.)
+
 ### The main view is `layouts/Default.vue`
 
 Most of the global CSS lives here in this file, and it's the wrapper for everything. (Since this site is just one page, that's kinda silly, because there's nothing to wrap. But if/when there ever was another page, the Default layout would still apply to it.)
