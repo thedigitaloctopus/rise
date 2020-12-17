@@ -3,7 +3,10 @@
 		<main class="newsletter">
 			 <section class="color yellowish bleed-bottom">
 
-				<g-image id="logo" class="fade-in-up" src="~/assets/images/rise-logo.svg" alt="RISE" />
+				<g-link to="/">
+					<g-image id="logo" class="fade-in-up" src="~/assets/images/rise-logo.svg" alt="RISE" />
+				</g-link>
+
 				<h1>
 					<span class="sr">Rise newsletter </span>
 					<span class="newsletter-title fade-in-up">{{ newsletter.title }}</span>
@@ -60,7 +63,7 @@ export default {
 			setTimeout(() => {
 				const scrollToEl = document.querySelector(`${window.location.hash}`)
 				if (scrollToEl) {
-					scrollToEl.scrollIntoView()
+					scrollToEl.scrollIntoView({ behavior: 'smooth' })
 				} else {
 					this.scrollToAnchor()
 				}
@@ -95,6 +98,12 @@ export default {
 		& > blockquote {
 			font-size: 1.3rem;
 
+			& + p {
+				width: calc(100% + 4rem);
+				max-width: calc(100% + 4rem);
+				margin-left: -2rem;
+			}
+
 			@media(min-width: 560px) {
 				grid-column: 1 / 2;
 				margin: 2rem 0;
@@ -108,6 +117,7 @@ export default {
 					display: flex;
 					align-items: center;
 					margin: 2rem 0;
+					width: 100%;
 				}
 			}
 
@@ -125,6 +135,38 @@ export default {
 			}
 		}
 
+		h2 {
+			margin: 1em 0 0;
+
+			& + p {
+				color: var(--blue);
+				text-transform: uppercase;
+				position: relative;
+				top: -5rem;
+				margin-bottom: -2rem;
+
+				@media (min-width: 800px) {
+					top: -6rem;
+				}
+			}
+		}
+
+		hr {
+			margin: 4rem;
+		}
+
+		hr + p {
+			width: calc(100% + 4rem);
+			max-width: calc(100% + 4rem);
+			margin-left: -2rem;
+			display: block;
+
+			@media (min-width: 720px) {
+				width: calc(100% + 8rem);
+				max-width: calc(100% + 8rem);
+				margin-left: -4rem;
+			}
+		}
 	}
 
 	#logo {
@@ -144,30 +186,6 @@ export default {
 		width: 100%;
 		max-width: 960px;
 		margin: auto;
-	}
-
-	h2 {
-		margin: 1em 0 0;
-
-		& + p {
-			color: var(--blue);
-			text-transform: uppercase;
-			position: relative;
-			top: -6rem;
-			margin-bottom: -2rem !important;
-		}
-	}
-
-	hr {
-		margin: 4rem;
-	}
-
-	hr + p {
-		@media (min-width: 960px) {
-			width: calc(100% + 8rem);
-			max-width: calc(100% + 8rem);
-			margin-left: -4rem !important;
-		}
 	}
 }
 </style>

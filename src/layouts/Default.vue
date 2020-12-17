@@ -1,7 +1,7 @@
 <template>
   <div class="layout">
     <BLM />
-    <slot/>
+    <slot></slot>
   </div>
 </template>
 

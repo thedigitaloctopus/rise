@@ -5,7 +5,7 @@
 			<h2>Want to read more about what we’re doing to spotlight BIPOC in tech?</h2>
 			<p>One of our goals is to uplift BIPOC in the tech community and share their stories. To do this, we’ve created a bi-annual newsletter that shares the challenges, successes, and triumphs of being a POC in the tech industry.</p>
 
-			<a href="/2020-07-13_Rise_Newsletter_V6.pdf" class="button">Read their stories</a>
+			<a href="/newsletter/issue-02" class="button">Read their stories</a>
 		</div>
 	</section>
 </template>
