@@ -43,9 +43,30 @@ export default {
 			featuredImage: '',
 		}
 	}),
+
 	mounted() {
 		this.newsletter = this.$page.newsletter
+
+
+
+		if (typeof window !== 'undefined' && window.location.hash) {
+			this.scrollToAnchor()
+		}
 	},
+
+	methods: {
+		// Necessary because the markdown content is actually rendered on the fly, not part of the server response (for some dumb reason. I might have reconsidered using markdown if I would've realized this.)
+		scrollToAnchor() {
+			setTimeout(() => {
+				const scrollToEl = document.querySelector(`${window.location.hash}`)
+				if (scrollToEl) {
+					scrollToEl.scrollIntoView()
+				} else {
+					this.scrollToAnchor()
+				}
+			}, 200)
+		}
+	}
 }
 </script>
 
