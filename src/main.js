@@ -3,6 +3,7 @@
 
 import DefaultLayout from '~/layouts/Default.vue'
 import '~/assets/fonts/museo_sans_rounded/museo_sans_rounded.css'
+import '~/assets/scss/global.scss'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component

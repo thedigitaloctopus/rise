@@ -1,7 +1,9 @@
 <template>
   <Layout>
     <main>
-      <Banner />
+      <!-- This was the banner for the 2020 vote posters. Leaving in case it's useful again.
+        <Banner />
+      -->
       <section class="color yellowish bleed-bottom swipe-in">
 
         <g-image id="logo" class="fade-in-up" src="~/assets/images/rise-logo.svg" alt="RISE" />
@@ -109,114 +111,3 @@ export default {
   },
 }
 </script>
-
-<style lang="scss">
-section {
-  padding: 4rem 0;
-
-  @media (max-width: 799px) {
-    & + section .container {
-      padding-top: 0;
-      margin-top: 0;
-    }
-  }
-}
-
-#logo {
-  width: 6rem;
-  display: block;
-  margin: 3rem auto 0;
-  padding: 0 0 6rem;
-}
-
-.pre-heading {
-  text-transform: uppercase;
-  color: var(--blue);
-  line-height: 1em;
-}
-
-.split {
-  display: grid;
-
-  @media (min-width: 800px) {
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 0 4rem;
-  }
-}
-
-.narrow {
-  max-width: 48rem;
-}
-
-.yellowish {
-  background: var(--yellowish);
-}
-
-.very-light-gray {
-  background: var(--gray2);
-}
-
-.bleed-bottom {
-  padding-bottom: 0;
-
-  @media (max-width: 799px) {
-    .container {
-      margin-bottom: 0;
-    }
-  }
-
-  img {
-    margin-bottom: 2rem;
-  }
-
-  @media(min-width: 800px) {
-
-    img {
-      margin: 3.5rem 0 -6rem;
-    }
-  }
-
-  p:last-of-type {
-    margin-bottom: 2rem;
-  }
-}
-
-.bleed-top {
-  padding-top: 0;
-
-  h2 {
-    margin-top: 4rem;
-  }
-
-  img {
-    margin-top: -6rem;
-  }
-}
-
-.hidden {
-  opacity: 0;
-  transform: translateY(1rem);
-}
-
-hr.hidden {
-  transform: translateY(0) scaleX(0.01);
-}
-
-.transition {
-  transition: opacity var(--transition), transform var(--transition);
-}
-
-.swipe-in {
-  transform-origin: bottom;
-  animation: swipeIn .6s cubic-bezier(1, 0, 0, 1) forwards;
-}
-
-@keyframes swipeIn {
-  from {
-    transform: scaleY(0)
-  }
-  to {
-    transform: scaleY(1)
-  }
-}
-</style>
