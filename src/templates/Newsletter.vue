@@ -20,6 +20,11 @@
 			<section>
 				<div class="container">
 					<div id="content" v-html="newsletter.content"></div>
+
+					<hr>
+					<div class="centered">
+						<g-link to="/" class="button">Learn more about Rise</g-link>
+					</div>
 				</div>
 			</section>
 		</main>
